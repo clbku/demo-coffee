@@ -1,0 +1,23 @@
+:root {
+  --primary: #c7a17a;
+  --primary-active: #b38b63;
+  --primary-outline: #b38b63b9;
+  --primary-hover: #b38b63;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
+
+.btn-primary:focus {
+  color: #fff;
+  background-color: var(--primary);
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.25rem var(--primary-outline);
+}
