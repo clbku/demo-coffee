@@ -16,5 +16,17 @@ $(document).ready(function () {
     $(".filter-buttons button").removeClass("active");
     $(this).addClass("active");
   });
-  $("#byProduct").modal({})
+  $("#byProduct").modal({});
+
+});
+
+$(window).scroll(function (event) {
+  var scroll = $(window).scrollTop();
+  if (scroll > 100) {
+    console.log("a");
+    $('#demo-2 .navbar').addClass('bg-dark');
+  }
+  else {
+    $('#demo-2 .navbar').removeClass('bg-dark');
+  }
 });
