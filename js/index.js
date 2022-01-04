@@ -23,10 +23,9 @@ $(document).ready(function () {
 $(window).scroll(function (event) {
   var scroll = $(window).scrollTop();
   if (scroll > 100) {
-    console.log("a");
-    $('#demo-2 .navbar').addClass('bg-dark');
+    $('#demo-2 .navbar, #demo-3 .navbar').addClass('bg-dark');
   }
   else {
-    $('#demo-2 .navbar').removeClass('bg-dark');
+    $('#demo-2 .navbar, #demo-3 .navbar').removeClass('bg-dark');
   }
 });
